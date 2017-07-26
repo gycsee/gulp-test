@@ -1,0 +1,21 @@
+a { text-decoration: none; color: #000; }
+
+html, body { width: 100%; height: 100%; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: normal; }
+
+.dialog { display: none; }
+.dialog > .d-box { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.dialog > .d-box > .d-container { border-radius: 6px; background: #fff; width: 80%; max-width: 300px; }
+.dialog > .d-box > .d-container > .d-head { height: 40px; padding: 0 15px; border-bottom: 1px solid #dbdbdb; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.dialog > .d-box > .d-container > .d-head > h2 { font-size: 18px; color: #333; font-weight: 500; }
+.dialog > .d-box > .d-container > .d-head > .close { width: 20px; height: 20px; border-radius: 50%; border: 1px solid #d7d7d7; position: relative; display: block; }
+.dialog > .d-box > .d-container > .d-head > .close::before, .dialog > .d-box > .d-container > .d-head > .close::after { content: ''; display: block; position: absolute; left: 3px; top: 10px; width: 15px; height: 1px; background: #d7d7d7; }
+.dialog > .d-box > .d-container > .d-head > .close::before { -webkit-transform: rotateZ(45deg); transform: rotateZ(45deg); }
+.dialog > .d-box > .d-container > .d-head > .close::after { -webkit-transform: rotateZ(-45deg); transform: rotateZ(-45deg); }
+.dialog > .d-box > .d-container > .d-content > h3 { font-size: 16px; font-weight: 500; color: #333; line-height: 26px; padding: 10px; }
+.dialog > .d-box > .d-container > .d-content > textarea { display: block; line-height: 24px; padding: 5px; width: 92%; margin: 0 auto; border: 1px solid #dbdbdb; border-radius: 5px; }
+.dialog > .d-box > .d-container > .d-content > .d-action { padding: 15px 0 20px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.dialog > .d-box > .d-container > .d-content > .d-action > a { width: 90px; height: 30px; font-size: 14px; border-radius: 8px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.dialog > .d-box > .d-container > .d-content > .d-action > a.d-action-l { color: #d7d7d7; border: 1px solid #d7d7d7; margin-right: 15px; }
+.dialog > .d-box > .d-container > .d-content > .d-action > a.d-action-r { color: #fc318a; border: 1px solid #fc318a; margin-left: 15px; }
